@@ -3,7 +3,7 @@ from werkzeug.security import generate_password_hash
 
 def check_admin():
     with app.app_context():
-        admin = User.query.filter_by(email='admin@mcq.com').first()
+        admin = User.query.filter_by(email='admin@gmail.com').first()
         if admin:
             print(f"Admin exists: {admin.name}")
             print(f"Admin is_admin: {admin.is_admin}")
@@ -11,7 +11,7 @@ def check_admin():
             print("Admin user not found. Creating...")
             admin_user = User(
                 name="Admin",
-                email="admin@mcq.com",
+                email="admin@gmail.com",
                 password_hash=generate_password_hash("admin123"),
                 is_admin=True
             )
