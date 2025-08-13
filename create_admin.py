@@ -3,7 +3,7 @@ from werkzeug.security import generate_password_hash
 
 # Change these values as needed
 admin_name = "Admin"
-admin_email = "admin@example.com"
+admin_email = "admin@gmail.com"
 admin_password = "admin123"
 
 with app.app_context():
