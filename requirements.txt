@@ -1,0 +1,9 @@
+flask
+pdfplumber
+python-docx
+werkzeug
+fpdf
+google-generativeai
+python-dotenv
+Flask-SQLAlchemy==3.0.5
+Flask-Login==0.6.3
